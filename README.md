@@ -7,18 +7,21 @@ L'objectif de ce guide est de faciliter le partage et la planification des parco
 ## Sommaire
 
 1. [Tableau récapitulatif des labs](#tableau-récapitulatif-des-labs)
-2. [Présentation](#présentation)
-3. [Comment accéder aux labs](#comment-accéder-aux-labs)
-4. [Parcours recommandés](#parcours-recommandés)
-5. [VCF Operations : supervision et optimisation](#vcf-operations--supervision-et-optimisation)
-6. [VCF Automation : libre-service et applications](#vcf-automation--libre-service-et-applications)
-7. [Plateforme VCF : cycle de vie, réseau et performance](#plateforme-vcf--cycle-de-vie-réseau-et-performance)
-8. [vSphere dans VCF](#vsphere-dans-vcf)
-9. [Stockage, résilience et protection des données](#stockage-résilience-et-protection-des-données)
-10. [Mobilité, services de données et IA privée](#mobilité-services-de-données-et-ia-privée)
-11. [Sécurité avec vDefend](#sécurité-avec-vdefend)
-12. [Équilibrage de charge avec Avi](#équilibrage-de-charge-avec-avi)
-13. [Évolutions par rapport à la version précédente](#évolutions-par-rapport-à-la-version-précédente)
+2. [Ordre de suivi recommandé](#ordre-de-suivi-recommandé)
+3. [Présentation](#présentation)
+4. [Comment accéder aux labs](#comment-accéder-aux-labs)
+5. [Prérequis et préparation](#prérequis-et-préparation)
+6. [Conseils pour réussir un lab](#conseils-pour-réussir-un-lab)
+7. [Parcours recommandés](#parcours-recommandés)
+8. [VCF Operations : supervision et optimisation](#vcf-operations--supervision-et-optimisation)
+9. [VCF Automation : libre-service et applications](#vcf-automation--libre-service-et-applications)
+10. [Plateforme VCF : cycle de vie, réseau et performance](#plateforme-vcf--cycle-de-vie-réseau-et-performance)
+11. [vSphere dans VCF](#vsphere-dans-vcf)
+12. [Stockage, résilience et protection des données](#stockage-résilience-et-protection-des-données)
+13. [Mobilité, services de données et IA privée](#mobilité-services-de-données-et-ia-privée)
+14. [Sécurité avec vDefend](#sécurité-avec-vdefend)
+15. [Équilibrage de charge avec Avi](#équilibrage-de-charge-avec-avi)
+16. [Évolutions par rapport à la version précédente](#évolutions-par-rapport-à-la-version-précédente)
 
 ## Tableau récapitulatif des labs
 
@@ -59,6 +62,45 @@ L'objectif de ce guide est de faciliter le partage et la planification des parco
 
 Le détail de chaque lab (description, objectif) figure dans les sections thématiques ci-dessous.
 
+## Ordre de suivi recommandé
+
+Ce tableau propose un ordre pour suivre l'ensemble des 32 labs, des fondations jusqu'aux sujets avancés. Les étudiants du cours Virtual Data Center Automation peuvent suivre en priorité les étapes 1 et 2, puis poursuivre avec les suivantes. Les niveaux indiqués sont des suggestions et la colonne « Fait » permet de suivre sa progression.
+
+| Ordre | Étape | Lab | Référence | Niveau | Pourquoi à cette place | Fait |
+|---|---|---|---|---|---|---|
+| 1 | 1. Fondations de la plateforme | [Maintenir son cloud privé, nouveautés plateforme et authentification unique](https://labs.hol.vmware.com/HOL/catalog/lab/27687) | HOL-2704-01-VCF-L | Débutant | Point de départ : cycle de vie, nouveautés et authentification unique | [ ] |
+| 2 | 1. Fondations de la plateforme | [Nouveautés de vSphere dans VCF](https://labs.hol.vmware.com/HOL/catalog/lab/27714) | HOL-2706-01-VCF-L | Débutant | Découvrir les nouveautés vSphere avant d'aller plus loin | [ ] |
+| 3 | 1. Fondations de la plateforme | [Réseau VCF avec NSX et VPC](https://labs.hol.vmware.com/HOL/catalog/lab/27667) | HOL-2704-02-VCF-L | Débutant | Comprendre le réseau NSX et les VPC, utile pour la suite | [ ] |
+| 4 | 1. Fondations de la plateforme | [vSAN et NVMe Memory Tiering](https://labs.hol.vmware.com/HOL/catalog/lab/27712) | HOL-2734-01-VCF-L | Intermédiaire | Stockage vSAN et optimisation de la mémoire | [ ] |
+| 5 | 1. Fondations de la plateforme | [vSphere : sujets avancés et automatisation avec PowerCLI](https://labs.hol.vmware.com/HOL/catalog/lab/27670) | HOL-2706-02-VCF-L | Intermédiaire | Sujets avancés et premiers scripts PowerCLI | [ ] |
+| 6 | 1. Fondations de la plateforme | [Gestion unifiée des machines virtuelles et de Kubernetes avec vSphere Supervisor](https://labs.hol.vmware.com/HOL/catalog/lab/27680) | HOL-2704-07-VCF-L | Intermédiaire | Introduction à Kubernetes sur la plateforme, utile avant les applications cloud native | [ ] |
+| 7 | 2. VCF Automation (coeur du cours) | [Prise en main de VCF Automation](https://labs.hol.vmware.com/HOL/catalog/lab/27677) | HOL-2711-21-VCF-L | Débutant | Première prise en main de VCF Automation | [ ] |
+| 8 | 2. VCF Automation (coeur du cours) | [Nouveautés de VCF Automation](https://labs.hol.vmware.com/HOL/catalog/lab/27713) | HOL-2711-20-VCF-L | Débutant | Nouveautés de la version 9.1 | [ ] |
+| 9 | 2. VCF Automation (coeur du cours) | [Gestion et administration côté fournisseur](https://labs.hol.vmware.com/HOL/catalog/lab/27695) | HOL-2711-22-VCF-L | Intermédiaire | Administration côté fournisseur : organisations, ressources, accès | [ ] |
+| 10 | 2. VCF Automation (coeur du cours) | [Applications modernes et cloud native avec VCF Automation](https://labs.hol.vmware.com/HOL/catalog/lab/27672) | HOL-2711-24-VCF-L | Intermédiaire | Déploiement d'applications modernes en libre-service | [ ] |
+| 11 | 3. Supervision et optimisation avec VCF Operations | [Prise en main et supervision de VCF Operations](https://labs.hol.vmware.com/HOL/catalog/lab/27715) | HOL-2711-01-VCF-L | Débutant | Prise en main de la supervision | [ ] |
+| 12 | 3. Supervision et optimisation avec VCF Operations | [Dépannage du cloud privé, journaux, métriques et flux réseau](https://labs.hol.vmware.com/HOL/catalog/lab/27679) | HOL-2711-02-VCF-L | Intermédiaire | Dépannage par les journaux, métriques et flux | [ ] |
+| 13 | 3. Supervision et optimisation avec VCF Operations | [Santé et diagnostics de l'infrastructure](https://labs.hol.vmware.com/HOL/catalog/lab/27635) | HOL-2711-03-VCF-L | Intermédiaire | Santé et diagnostics de l'infrastructure | [ ] |
+| 14 | 3. Supervision et optimisation avec VCF Operations | [Tableaux de bord, vues et rapports](https://labs.hol.vmware.com/HOL/catalog/lab/27685) | HOL-2711-12-VCF-L | Intermédiaire | Tableaux de bord et rapports | [ ] |
+| 15 | 3. Supervision et optimisation avec VCF Operations | [Optimisation de la capacité et Green Score](https://labs.hol.vmware.com/HOL/catalog/lab/27699) | HOL-2711-08-VCF-L | Intermédiaire | Capacité et efficacité énergétique | [ ] |
+| 16 | 3. Supervision et optimisation avec VCF Operations | [Optimisation des coûts, showback et chargeback](https://labs.hol.vmware.com/HOL/catalog/lab/27700) | HOL-2711-09-VCF-L | Intermédiaire | Gestion des coûts, showback et chargeback | [ ] |
+| 17 | 4. Sécurité et équilibrage de charge | [Parcours sécurité du pare-feu vDefend](https://labs.hol.vmware.com/HOL/catalog/lab/27651) | HOL-2770-01-ANS-L | Débutant | Parcours sécurité du pare-feu vDefend | [ ] |
+| 18 | 4. Sécurité et équilibrage de charge | [Pare-feu distribué vDefend : prise en main et sécurité avancée](https://labs.hol.vmware.com/HOL/catalog/lab/27652) | HOL-2770-03-ANS-L | Intermédiaire | Pare-feu distribué et micro-segmentation | [ ] |
+| 19 | 4. Sécurité et équilibrage de charge | [Pare-feu vDefend avec protection avancée contre les menaces](https://labs.hol.vmware.com/HOL/catalog/lab/27638) | HOL-2770-02-ANS-L | Avancé | Protection avancée contre les menaces | [ ] |
+| 20 | 4. Sécurité et équilibrage de charge | [Prise en main de l'équilibrage de charge Avi](https://labs.hol.vmware.com/HOL/catalog/lab/27678) | HOL-2740-02-ANS-L | Débutant | Bases de l'équilibrage de charge Avi | [ ] |
+| 21 | 4. Sécurité et équilibrage de charge | [Équilibrage de charge des applications VCF avec Avi](https://labs.hol.vmware.com/HOL/catalog/lab/27697) | HOL-2740-01-ANS-L | Intermédiaire | Équilibrage de charge des applications VCF | [ ] |
+| 22 | 4. Sécurité et équilibrage de charge | [Migration d'un équilibrage de charge existant avec l'outil de conversion Avi](https://labs.hol.vmware.com/HOL/catalog/lab/27689) | HOL-2740-05-ANS-L | Avancé | Migration d'un équilibrage de charge existant | [ ] |
+| 23 | 5. Résilience et protection des données | [Réplication vSphere améliorée](https://labs.hol.vmware.com/HOL/catalog/lab/27675) | HOL-2734-02-VCF-S | Intermédiaire | Réplication des machines virtuelles | [ ] |
+| 24 | 5. Résilience et protection des données | [VMware Live Recovery : reprise après sinistre](https://labs.hol.vmware.com/HOL/catalog/lab/27709) | HOL-2734-03-VCF-L | Intermédiaire | Reprise après sinistre | [ ] |
+| 25 | 5. Résilience et protection des données | [VMware Live Recovery : reprise après ransomware](https://labs.hol.vmware.com/HOL/catalog/lab/27710) | HOL-2734-04-VCF-S | Avancé | Reprise après ransomware | [ ] |
+| 26 | 6. Performance | [Introduction à la performance vSphere et sous-systèmes ESXi](https://labs.hol.vmware.com/HOL/catalog/lab/27694) | HOL-2704-03-VCF-L | Intermédiaire | Indicateurs de performance et sous-systèmes ESXi | [ ] |
+| 27 | 6. Performance | [Performance des charges de travail avec VMmark](https://labs.hol.vmware.com/HOL/catalog/lab/27693) | HOL-2704-04-VCF-L | Avancé | Mesure de performance avec VMmark | [ ] |
+| 28 | 7. Sujets avancés, migration et services | [Mise à niveau depuis vSphere 8](https://labs.hol.vmware.com/HOL/catalog/lab/27706) | HOL-2704-05-VCF-S | Intermédiaire | Mise à niveau depuis vSphere 8 | [ ] |
+| 29 | 7. Sujets avancés, migration et services | [Opérations avancées et outils VCF](https://labs.hol.vmware.com/HOL/catalog/lab/27704) | HOL-2704-06-VCF-L | Avancé | Opérations avancées et outils | [ ] |
+| 30 | 7. Sujets avancés, migration et services | [HCX : prise en main, planification et migration avancée](https://labs.hol.vmware.com/HOL/catalog/lab/27707) | HOL-2705-03-VCF-L | Intermédiaire | Migration de charges avec HCX | [ ] |
+| 31 | 7. Sujets avancés, migration et services | [VMware Data Services Manager : prise en main](https://labs.hol.vmware.com/HOL/catalog/lab/27671) | HOL-2705-04-VCF-L | Intermédiaire | Bases de données en libre-service | [ ] |
+| 32 | 7. Sujets avancés, migration et services | [VMware Private AI Foundation avec NVIDIA : prise en main](https://labs.hol.vmware.com/HOL/catalog/lab/27644) | HOL-2705-12-VCF-L | Avancé | IA privée avec NVIDIA | [ ] |
+
 ## Présentation
 
 Le catalogue VCF 9.1 met à jour l'ensemble des labs du catalogue précédent. Plusieurs labs ont été regroupés afin d'offrir des parcours plus complets et moins redondants. Les labs s'adressent aux administrateurs, architectes et ingénieurs plateforme qui souhaitent découvrir ou approfondir le modèle d'exploitation unifié du cloud privé VMware.
@@ -75,6 +117,40 @@ Ces labs sont destinés en priorité aux étudiants de E5 CCSN, dans le cadre du
 4. L'environnement est provisionné et accessible directement dans le navigateur.
 
 Chaque fiche et le tableau récapitulatif donnent le lien direct vers le lab dans le catalogue.
+
+## Prérequis et préparation
+
+Avant de lancer votre premier lab, prenez quelques minutes pour préparer votre environnement de travail.
+
+### Créer son compte Hands-on Labs
+
+Un compte est nécessaire pour lancer les labs. Pour vous aider dans la création et la configuration de votre compte, consultez la fiche d'aide publiée par l'équipe Hands-on Labs : [guide de création de compte HOL](https://ent.box.com/s/ftdwoeoeahdejb5iv0ymjxxc2dbumjqd).
+
+### Matériel et navigateur
+
+- Utilisez un navigateur récent et à jour (Chrome, Edge ou Firefox, par exemple).
+- Privilégiez un ordinateur avec un écran de taille confortable : les labs affichent à la fois un manuel et une console, ce qui demande de la place.
+- Désactivez les extensions qui peuvent gêner l'affichage ou bloquer des fenêtres (bloqueurs de publicité, par exemple) si vous rencontrez des problèmes.
+
+### Connexion
+
+- Utilisez une connexion internet stable, de préférence filaire ou en Wi-Fi de bonne qualité.
+- Évitez les réseaux restrictifs qui filtrent certains flux. Si le lab ne s'affiche pas depuis le réseau de votre établissement, essayez depuis un autre réseau.
+
+### Temps à prévoir
+
+- Chaque lab dispose d'une durée de session limitée, indiquée au lancement. Consultez la fiche du lab dans le catalogue pour connaître sa durée estimée avant de démarrer.
+- Réservez une plage de temps sans interruption, avec une marge supplémentaire pour la prise en main de l'environnement.
+- Les labs au format court (suffixe « S ») demandent généralement moins de temps que les labs complets (suffixe « L »).
+
+## Conseils pour réussir un lab
+
+1. **Lire le manuel en entier avant de lancer l'environnement.** Cela permet de comprendre l'objectif, les étapes et les points délicats, et d'éviter de consommer le temps de session à découvrir les consignes.
+2. **Prendre des notes et des captures d'écran.** Notez les paramètres utilisés, les commandes exécutées et les résultats obtenus. Ces éléments sont précieux pour réviser et pour rédiger un éventuel compte rendu.
+3. **Ne pas perdre le temps de session.** Préparez vos notes et vos questions à l'avance, évitez de laisser l'environnement ouvert sans l'utiliser et suivez les étapes dans l'ordre indiqué par le manuel.
+4. **Relancer le lab en cas de blocage.** Si une étape échoue de manière répétée ou si l'environnement se comporte de façon anormale, terminez la session et lancez-en une nouvelle plutôt que de perdre du temps à insister.
+5. **Avancer étape par étape.** Vérifiez le résultat de chaque étape avant de passer à la suivante : une erreur non détectée peut bloquer la suite.
+6. **Respecter l'ordre de suivi recommandé.** Les premiers labs apportent les notions utiles pour les suivants.
 
 ## Parcours recommandés
 
