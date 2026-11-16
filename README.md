@@ -24,38 +24,38 @@ L'objectif de ce guide est de faciliter le partage et la planification des parco
 
 | N° | Domaine | Lab | Référence | Lien |
 |---|---|---|---|---|
-| 1 | VCF Operations | Prise en main et supervision de VCF Operations | HOL-2711-01-VCF-L | ... |
-| 2 | VCF Operations | Dépannage du cloud privé, journaux, métriques et flux réseau | HOL-2711-02-VCF-L | ... |
-| 3 | VCF Operations | Santé et diagnostics de l'infrastructure | HOL-2711-03-VCF-L | ... |
-| 4 | VCF Operations | Tableaux de bord, vues et rapports | HOL-2711-12-VCF-L | ... |
-| 5 | VCF Operations | Optimisation de la capacité et Green Score | HOL-2711-08-VCF-L | ... |
-| 6 | VCF Operations | Optimisation des coûts, showback et chargeback | HOL-2711-09-VCF-L | ... |
-| 7 | VCF Automation | Nouveautés de VCF Automation | HOL-2711-20-VCF-L | ... |
-| 8 | VCF Automation | Prise en main de VCF Automation | HOL-2711-21-VCF-L | ... |
-| 9 | VCF Automation | Gestion et administration côté fournisseur | HOL-2711-22-VCF-L | ... |
-| 10 | VCF Automation | Applications modernes et cloud native avec VCF Automation | HOL-2711-24-VCF-L | ... |
-| 11 | Plateforme VCF | Maintenir son cloud privé, nouveautés plateforme et authentification unique | HOL-2704-01-VCF-L | ... |
-| 12 | Plateforme VCF | Réseau VCF avec NSX et VPC | HOL-2704-02-VCF-L | ... |
-| 13 | Plateforme VCF | Introduction à la performance vSphere et sous-systèmes ESXi | HOL-2704-03-VCF-L | ... |
-| 14 | Plateforme VCF | Performance des charges de travail avec VMmark | HOL-2704-04-VCF-L | ... |
-| 15 | Plateforme VCF | Mise à niveau depuis vSphere 8 | HOL-2704-05-VCF-S | ... |
-| 16 | Plateforme VCF | Opérations avancées et outils VCF | HOL-2704-06-VCF-L | ... |
-| 17 | Plateforme VCF | Gestion unifiée des machines virtuelles et de Kubernetes avec vSphere Supervisor | HOL-2704-07-VCF-L | ... |
-| 18 | vSphere | Nouveautés de vSphere dans VCF | HOL-2706-01-VCF-L | ... |
-| 19 | vSphere | vSphere : sujets avancés et automatisation avec PowerCLI | HOL-2706-02-VCF-L | ... |
-| 20 | Stockage et résilience | vSAN et NVMe Memory Tiering | HOL-2734-01-VCF-L | ... |
-| 21 | Stockage et résilience | Réplication vSphere améliorée | HOL-2734-02-VCF-S | ... |
-| 22 | Stockage et résilience | VMware Live Recovery : reprise après sinistre | HOL-2734-03-VCF-L | ... |
-| 23 | Stockage et résilience | VMware Live Recovery : reprise après ransomware | HOL-2734-04-VCF-S | ... |
-| 24 | Mobilité, données et IA | HCX : prise en main, planification et migration avancée | HOL-2705-03-VCF-L | ... |
-| 25 | Mobilité, données et IA | VMware Data Services Manager : prise en main | HOL-2705-04-VCF-L | ... |
-| 26 | Mobilité, données et IA | VMware Private AI Foundation avec NVIDIA : prise en main | HOL-2705-12-VCF-L | ... |
-| 27 | Sécurité vDefend | Parcours sécurité du pare-feu vDefend | HOL-2770-01-ANS-L | ... |
-| 28 | Sécurité vDefend | Pare-feu vDefend avec protection avancée contre les menaces | HOL-2770-02-ANS-L | ... |
-| 29 | Sécurité vDefend | Pare-feu distribué vDefend : prise en main et sécurité avancée | HOL-2770-03-ANS-L | ... |
-| 30 | Équilibrage de charge Avi | Équilibrage de charge des applications VCF avec Avi | HOL-2740-01-ANS-L | ... |
-| 31 | Équilibrage de charge Avi | Prise en main de l'équilibrage de charge Avi | HOL-2740-02-ANS-L | ... |
-| 32 | Équilibrage de charge Avi | Migration d'un équilibrage de charge existant avec l'outil de conversion Avi | HOL-2740-05-ANS-L | ... |
+| 1 | VCF Operations | Prise en main et supervision de VCF Operations | HOL-2711-01-VCF-L | 
+| 2 | VCF Operations | Dépannage du cloud privé, journaux, métriques et flux réseau | HOL-2711-02-VCF-L | 
+| 3 | VCF Operations | Santé et diagnostics de l'infrastructure | HOL-2711-03-VCF-L | 
+| 4 | VCF Operations | Tableaux de bord, vues et rapports | HOL-2711-12-VCF-L | 
+| 5 | VCF Operations | Optimisation de la capacité et Green Score | HOL-2711-08-VCF-L | 
+| 6 | VCF Operations | Optimisation des coûts, showback et chargeback | HOL-2711-09-VCF-L | 
+| 7 | VCF Automation | Nouveautés de VCF Automation | HOL-2711-20-VCF-L | 
+| 8 | VCF Automation | Prise en main de VCF Automation | HOL-2711-21-VCF-L | 
+| 9 | VCF Automation | Gestion et administration côté fournisseur | HOL-2711-22-VCF-L | 
+| 10 | VCF Automation | Applications modernes et cloud native avec VCF Automation | HOL-2711-24-VCF-L | 
+| 11 | Plateforme VCF | Maintenir son cloud privé, nouveautés plateforme et authentification unique | HOL-2704-01-VCF-L | 
+| 12 | Plateforme VCF | Réseau VCF avec NSX et VPC | HOL-2704-02-VCF-L | 
+| 13 | Plateforme VCF | Introduction à la performance vSphere et sous-systèmes ESXi | HOL-2704-03-VCF-L | 
+| 14 | Plateforme VCF | Performance des charges de travail avec VMmark | HOL-2704-04-VCF-L | 
+| 15 | Plateforme VCF | Mise à niveau depuis vSphere 8 | HOL-2704-05-VCF-S | 
+| 16 | Plateforme VCF | Opérations avancées et outils VCF | HOL-2704-06-VCF-L | 
+| 17 | Plateforme VCF | Gestion unifiée des machines virtuelles et de Kubernetes avec vSphere Supervisor | HOL-2704-07-VCF-L | 
+| 18 | vSphere | Nouveautés de vSphere dans VCF | HOL-2706-01-VCF-L | 
+| 19 | vSphere | vSphere : sujets avancés et automatisation avec PowerCLI | HOL-2706-02-VCF-L | 
+| 20 | Stockage et résilience | vSAN et NVMe Memory Tiering | HOL-2734-01-VCF-L | 
+| 21 | Stockage et résilience | Réplication vSphere améliorée | HOL-2734-02-VCF-S | 
+| 22 | Stockage et résilience | VMware Live Recovery : reprise après sinistre | HOL-2734-03-VCF-L | 
+| 23 | Stockage et résilience | VMware Live Recovery : reprise après ransomware | HOL-2734-04-VCF-S | 
+| 24 | Mobilité, données et IA | HCX : prise en main, planification et migration avancée | HOL-2705-03-VCF-L | 
+| 25 | Mobilité, données et IA | VMware Data Services Manager : prise en main | HOL-2705-04-VCF-L | 
+| 26 | Mobilité, données et IA | VMware Private AI Foundation avec NVIDIA : prise en main | HOL-2705-12-VCF-L | 
+| 27 | Sécurité vDefend | Parcours sécurité du pare-feu vDefend | HOL-2770-01-ANS-L | 
+| 28 | Sécurité vDefend | Pare-feu vDefend avec protection avancée contre les menaces | HOL-2770-02-ANS-L | 
+| 29 | Sécurité vDefend | Pare-feu distribué vDefend : prise en main et sécurité avancée | HOL-2770-03-ANS-L | 
+| 30 | Équilibrage de charge Avi | Équilibrage de charge des applications VCF avec Avi | HOL-2740-01-ANS-L | 
+| 31 | Équilibrage de charge Avi | Prise en main de l'équilibrage de charge Avi | HOL-2740-02-ANS-L | 
+| 32 | Équilibrage de charge Avi | Migration d'un équilibrage de charge existant avec l'outil de conversion Avi | HOL-2740-05-ANS-L | 
 
 Le détail de chaque lab (description, objectif) figure dans les sections thématiques ci-dessous.
 
