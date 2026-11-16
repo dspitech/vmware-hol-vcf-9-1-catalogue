@@ -22,7 +22,7 @@ L'objectif de ce guide est de faciliter le partage et la planification des parco
 
 ## Tableau récapitulatif des labs
 
-| N° | Domaine | Lab | Référence | Lien |
+| N° | Domaine | Lab | Référence | 
 |---|---|---|---|---|
 | 1 | VCF Operations | Prise en main et supervision de VCF Operations | HOL-2711-01-VCF-L | 
 | 2 | VCF Operations | Dépannage du cloud privé, journaux, métriques et flux réseau | HOL-2711-02-VCF-L | 
