@@ -1,8 +1,25 @@
 # Catalogue VMware Hands-on Labs : VMware Cloud Foundation (VCF) 9.1
 
+<img width="446" height="340" alt="image" src="https://github.com/user-attachments/assets/d10e1618-cc9b-4224-adfe-7be159fa341a" />
+
+
 Ce document présente les labs disponibles dans la plateforme VMware Hands-on Labs (HOL) pour VMware Cloud Foundation 9.1. Chaque lab est un environnement complet, préconfiguré et accessible depuis un navigateur, sans aucune infrastructure à déployer.
 
 L'objectif de ce guide est de faciliter le partage et la planification des parcours de formation : il regroupe les labs par domaine et précise, pour chacun, son contenu, son objectif et son lien d'accès.
+
+## Informations sur le laboratoire
+
+| Information | Détail |
+|---|---|
+| **Titre** | Laboratoire VMware Cloud Foundation (VCF) 9.1 |
+| **Auteur** | LO Pape |
+| **Date de publication** | 17 novembre 2026 |
+| **Dernière mise à jour** | 17 novembre 2026 |
+| **Version** | 1.0.0 |
+| **Statut** | Première publication |
+| **Type de document** | Laboratoire technique |
+| **Environnement** | VMware Cloud Foundation (VCF) |
+| **Licence** | MIT |
 
 ## Sommaire
 
